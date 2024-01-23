@@ -7,12 +7,15 @@ button {
     background-color: rgb(180,180,180);
     transition: background-color 0.2s, transform 0.2s;
     z-index: 14;
+    pointer-events: all;
 }
 
 
 button:hover {
     background-color: rgb(205,205,205);
     transform: scale(1.05);
+}
+p{
 }
 
 div {
@@ -23,6 +26,7 @@ div {
     top:0px;
     left:0px;
     z-index: 1;
+    pointer-events: none;
 }
 
 #yes {
