@@ -49,7 +49,10 @@ document.addEventListener("mousemove",function(event){
 })
 
 ele2.addEventListener("click",function(){
-    document.body.style.backgroundColor = `rgb(255,150,200)`
+    let r = 250 + Math.floor(Math.random()*6)
+    let g = 101 + Math.floor(Math.random()**(1.5)*100)
+    let b =  176+Math.floor(Math.random()**(0.8)*50)
+    document.body.style.backgroundColor = `rgb(${r},${g},${b})`
     document.body.insertAdjacentHTML("beforeend",`<p>Hooray!</p>`)
 })
 
