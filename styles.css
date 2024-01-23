@@ -6,7 +6,9 @@ button {
     padding: 5px;
     background-color: rgb(180,180,180);
     transition: background-color 0.2s, transform 0.2s;
+    z-index: 14;
 }
+
 
 button:hover {
     background-color: rgb(205,205,205);
@@ -20,6 +22,7 @@ div {
     overflow:hidden;
     top:0px;
     left:0px;
+    z-index: 1;
 }
 
 #yes {
