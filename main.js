@@ -48,6 +48,10 @@ document.addEventListener("mousemove",function(event){
     r = newr
 })
 
+ele.addEventListener("focus", function(){
+    ele2.focus()
+})
+
 ele2.addEventListener("click",function(){
     let r = 250 + Math.floor(Math.random()*6)
     let g = 101 + Math.floor(Math.random()**(1.5)*100)
@@ -60,6 +64,7 @@ ele.addEventListener("click",function(){
     document.body.style.backgroundColor = `rgb(80,90,120)`
     document.body.insertAdjacentHTML("beforeend",`<p>Boooo!</p>`)
 })
+//poop
 
 window.onresize = function(){
     divC = div.getBoundingClientRect()
