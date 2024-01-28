@@ -7,6 +7,14 @@ let divC = div.getBoundingClientRect()
 ele.style.position = "absolute"
 ele.style.top = `${105}px`
 ele.style.left =`${700}px`
+
+if (window.innerWidth < 700){
+    ele2.style.top = `${160}px`
+    ele2.style.left = `${window.innerWidth/2 - 15}px`
+    ele.style.top = `${320}px`
+    ele.style.left =`${window.innerWidth/2 - 15}px`
+}
+
 let moving = 0
 let r = 0
 document.addEventListener("mousemove",function(event){
